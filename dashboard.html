@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - FerAcademy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="fa-container">
+      <div class="fa-header">
+        <a href="index.html" class="fa-logo">
+          <div class="fa-logo-icon">F</div>
+          <span>FerAcademy</span>
+        </a>
+        <nav class="fa-nav">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="dashboard.html" class="active">Dashboard</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="fa-section">
+      <div class="fa-container fa-dashboard">
+        <h1 class="fa-section-title">Your Progress Dashboard</h1>
+        <p class="fa-section-subtitle">Track your learning journey</p>
+
+        <div class="fa-stats-grid">
+          <div class="fa-stat-card">
+            <div id="total-lessons" class="fa-stat-value">0</div>
+            <div class="fa-stat-label">Total Lessons</div>
+          </div>
+          <div class="fa-stat-card">
+            <div id="completed-count" class="fa-stat-value">0</div>
+            <div class="fa-stat-label">Completed</div>
+          </div>
+          <div class="fa-stat-card">
+            <div id="average-score" class="fa-stat-value">0%</div>
+            <div class="fa-stat-label">Average Score</div>
+          </div>
+          <div class="fa-stat-card">
+            <div id="badges-count" class="fa-stat-value">0</div>
+            <div class="fa-stat-label">Badges Earned</div>
+          </div>
+        </div>
+
+        <div class="fa-progress-section">
+          <h2 style="margin-bottom: 0.5rem;">Overall Progress</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Complete all lessons to reach 100%</p>
+          <div class="fa-progress-bar-container">
+            <div class="fa-progress-bar">
+              <div id="progress-bar-fill" class="fa-progress-bar-fill" style="width: 0%;">0%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fa-badges-section">
+          <h2 style="margin-bottom: 1rem;">🏆 Your Badges</h2>
+          <div id="badges" class="fa-badges-grid"></div>
+          <div id="no-badges" class="fa-empty-state" style="display: none;">
+            <div class="fa-empty-icon">🏅</div>
+            <p>Complete lessons to earn badges!</p>
+          </div>
+        </div>
+
+        <div class="fa-completed-lessons">
+          <h2 style="margin-bottom: 1rem;">📚 Completed Lessons</h2>
+          <ul id="completed-list" class="fa-completed-list"></ul>
+          <div id="no-completed" class="fa-empty-state" style="display: none;">
+            <div class="fa-empty-icon">📖</div>
+            <h3>No completed lessons yet</h3>
+            <p>Start learning to see your progress here!</p>
+            <a href="courses.html" class="fa-btn fa-btn-primary" style="margin-top: 1rem;">Browse Courses</a>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <button id="clear-progress-btn" class="fa-btn fa-btn-secondary">Clear All Progress</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fa-container">
+      <div class="fa-footer-content">
+        <div class="fa-footer-section">
+          <h3>FerAcademy</h3>
+          <p>Your gateway to mastering web development and programming skills through micro-learning.</p>
+        </div>
+        <div class="fa-footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="fa-footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Web Development</a>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Frameworks</a>
+          <a href="courses.html">Tools</a>
+        </div>
+      </div>
+      <div class="fa-footer-bottom">
+        <p>&copy; 2025 FerAcademy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.lessons.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

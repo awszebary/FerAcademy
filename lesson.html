@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson - FerAcademy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="fa-container">
+      <div class="fa-header">
+        <a href="index.html" class="fa-logo">
+          <div class="fa-logo-icon">F</div>
+          <span>FerAcademy</span>
+        </a>
+        <nav class="fa-nav">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="fa-lesson-header">
+      <div class="fa-container">
+        <h1 id="lesson-title" class="fa-lesson-title"></h1>
+        <div id="lesson-meta" class="fa-lesson-meta"></div>
+      </div>
+    </div>
+
+    <section class="fa-section">
+      <div class="fa-container">
+        <div class="fa-lesson-content">
+          <div>
+            <div id="lesson-media" class="fa-media-container"></div>
+            
+            <div id="flashcards-section" class="fa-flashcards-container" style="margin-top: 2rem;">
+              <h2 class="fa-flashcards-title">📚 Study Flashcards</h2>
+              <div class="fa-flashcard-wrapper">
+                <div id="flashcard" class="fa-flashcard">
+                  <div class="fa-flashcard-face fa-flashcard-front"></div>
+                  <div class="fa-flashcard-face fa-flashcard-back"></div>
+                </div>
+              </div>
+              <div class="fa-flashcard-controls">
+                <button id="prev-card" class="fa-flashcard-btn">← Previous</button>
+                <button id="flip-card" class="fa-flashcard-btn">Flip Card</button>
+                <button id="next-card" class="fa-flashcard-btn">Next →</button>
+              </div>
+              <div id="card-counter" class="fa-flashcard-counter"></div>
+            </div>
+          </div>
+
+          <div>
+            <div style="background-color: var(--bg-color); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); position: sticky; top: 100px;">
+              <h3 style="margin-bottom: 1rem;">Ready to test your knowledge?</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Complete the quiz to track your progress and earn your completion badge.</p>
+              <a id="take-quiz-btn" href="#" class="fa-btn fa-btn-primary" style="width: 100%; display: block; text-align: center;">Take Quiz →</a>
+              <a href="courses.html" class="fa-btn fa-btn-secondary" style="width: 100%; display: block; text-align: center; margin-top: 1rem;">← Back to Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fa-container">
+      <div class="fa-footer-content">
+        <div class="fa-footer-section">
+          <h3>FerAcademy</h3>
+          <p>Your gateway to mastering web development and programming skills through micro-learning.</p>
+        </div>
+        <div class="fa-footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="fa-footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Web Development</a>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Frameworks</a>
+          <a href="courses.html">Tools</a>
+        </div>
+      </div>
+      <div class="fa-footer-bottom">
+        <p>&copy; 2025 FerAcademy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.lessons.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lesson.js"></script>
+</body>
+</html>
